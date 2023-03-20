@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#--------------React Files-------------------#
+
+# dependencies
+frontend/sistema-vazvi/node_modules
+frontend/sistema-vazvi/.pnp
+frontend/sistema-vazvi/.pnp.js
+
+# testing
+frontend/sistema-vazvi/coverage
+
+# production
+frontend/sistema-vazvi/build
+
+# misc
+frontend/sistema-vazvi/.DS_Store
+frontend/sistema-vazvi/.env.local
+frontend/sistema-vazvi/.env.development.local
+frontend/sistema-vazvi/.env.test.local
+frontend/sistema-vazvi/.env.production.local
+
+frontend/sistema-vazvi/npm-debug.log*
+frontend/sistema-vazvi/yarn-debug.log*
+frontend/sistema-vazvi/yarn-error.log*
+
+#--------------Nest Files-------------------#
+
+# compiled output
+backend/api/dist
+backend/api/node_modules
+
+# Logs
+backend/api/logs
+backend/api/*.log
+backend/api/npm-debug.log*
+backend/api/pnpm-debug.log*
+backend/api/yarn-debug.log*
+backend/api/yarn-error.log*
+backend/api/lerna-debug.log*
+
+# OS
+backend/api/.DS_Store
+
+# Tests
+backend/api/coverage
+backend/api/.nyc_output
+
+# IDEs and editors
+backend/api/.idea
+backend/api/.project
+backend/api/.classpath
+backend/api/.c9/
+backend/api/*.launch
+backend/api/.settings/
+backend/api/*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
