@@ -12,7 +12,6 @@ import { ProductModule } from './product/product.module';
 import { Product } from './product/entity/product.entity';
 import { ItemTicket } from './item-ticket/entity/item-ticket.entity';
 import { ItemTicketModule } from './item-ticket/item-ticket.module';
-import { PaymentController } from './payment/payment.controller';
 import { PaymentModule } from './payment/payment.module';
 
 @Module({
@@ -22,7 +21,7 @@ import { PaymentModule } from './payment/payment.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'root',
+      password: '',
       database: 'inventariodb_test',
       entities: [Category, Brand, Client, Product, ItemTicket],
       synchronize: false,
@@ -34,7 +33,7 @@ import { PaymentModule } from './payment/payment.module';
     ItemTicketModule,
     PaymentModule,
   ],
-  controllers: [AppController, PaymentController],
+  controllers: [AppController],
   providers: [AppService ],
 })
 export class AppModule {}
